@@ -1,0 +1,187 @@
+
+
+* {
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: transparent;
+    
+}
+
+.navigation {
+    background-color: #F6B0BB;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 70px;
+}
+.navigation > .container-nav {
+    max-width: 100%;
+    height: 70px;
+    background-color: #F6B0BB;
+    margin: auto;
+}
+.navigation .navbar {
+    position: relative;
+}
+.navigation .navbar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+.navigation .navbar .logo-toggle-container .logo-buton .menu-nav ul li {
+    height: 60px;
+}
+.navigation .navbar .logo-toggle-container a{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.navigation .navbar .logo-toggle-container a img {
+    width: 60px;
+    margin-top: 0px;
+    border-radius: 50%;
+    
+}
+.navigation .menu-nav {
+    text-align: right;
+}
+.logo-button {
+    position: fixed;
+    right: 100px;
+    top: 16px; 
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-button i {
+    font-size: 20px;
+    color: #FFF6DF;
+    z-index: 589;
+}
+
+.logo-button button {
+    background-color: #f06292;
+    color: #FFF6DF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo-button button:hover {
+    background-color: #ec407a;
+}
+
+@media  screen and (min-width:1024px){
+    .navigation .menu-nav{
+        display: block !important;
+        height: 100px !important;
+    }
+    
+    
+}
+
+.navigation .menu-nav li {
+    display: inline-block;
+    padding: 13px 10px ;
+    margin-left: 20px;
+}
+.navigation .menu-nav li a {
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFF6DF;
+    font-size: 16px;
+}
+.navigation .menu-nav li:nth-child(1),
+.navigation .menu-nav li:nth-child(2),
+.navigation .menu-nav li:nth-child(3),
+.navigation .menu-nav li:nth-child(4) {
+    float: left;
+}
+.navigation .menu-nav li:hover a {
+    background-color: palevioletred;
+    color: #FFF6DF;
+}
+
+.content{
+    margin-top: 60px;
+    font-family: "Tienne", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation .menu-nav {
+        display: block !important; /* Menampilkan menu secara default pada ukuran 1024px dan lebih besar */
+       
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navigation .navbar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+    .navigation .navbar .logo-toggle-container a {
+        width: 80%;
+    }
+    .navigation .navbar .logo-toggle-container a img {
+        width: 60px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .navigation .menu-nav li:nth-child(1) {
+        padding-left: 0px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 45px;
+        background: #FFF6DF;
+        padding: 15px 9px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box span {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        height: 2px;
+        background-color: #ec407a;
+        margin-bottom: 4px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box span:last-child {
+        margin-bottom: 0;
+    }
+    .navigation .menu-nav {
+        text-align: center;
+        display: none; /* Menyembunyikan menu pada ukuran di bawah 1024px */
+    }
+    .navigation .menu-nav li {
+        display: block;
+        float: none !important;
+        padding: 0 10px;
+        border-bottom: 1px solid #FFF6DF;
+    }
+    .logo-button {
+        margin-right: auto;
+    }
+}
